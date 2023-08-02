@@ -6,12 +6,9 @@ print ("hola mundo")
 mensaje = "hola mundooo"
 print (mensaje)
 
-NUMERO1 = int(input("ingresa el primer numero "))
-NUMERO2 = int(input("ingresa el otro numero "))
 
-print ("la suma es " + str (NUMERO1 + NUMERO2))
-
-
+NOMBRE = input("ingresa tu nombre ")
+print ("hola " + NOMBRE + " MUCHO GUSTO")
    
 
 
