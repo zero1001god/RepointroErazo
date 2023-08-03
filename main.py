@@ -60,3 +60,18 @@ print (residuo)
 
 
 #ejercicio 
+print("dime una cantidad a invertir")
+c=float(input())
+print("ahora el interes")
+i=float(input())
+print("a cuantos años quieres")
+a=float(input())
+inversion= c*(i/100+1)**a
+print("el capital obtenido es ")
+print(inversion)
+
+
+print("cantidad muñecas")
+mñ=int(input())
+print("payaso")
+py=int(input())
