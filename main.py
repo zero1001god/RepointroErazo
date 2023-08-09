@@ -30,9 +30,9 @@
 #operacion = str(Horas * Costo)
 #print ("tu pago total en el día es " + operacion + " pesos")
 ''''''
-print ("dame un entero positivo")
+''''print ("dame un entero positivo")
 N = int(input())
-print ("EL RESULTADO ES" + str(N*(N+1)//2) )
+print ("EL RESULTADO ES" + str(N*(N+1)//2) )'''
 '''
 #N = int(input("dame un entero"))
 #suma = str(N*(N+1)//2)
@@ -45,9 +45,9 @@ print("cuanto mides")
 estatura =(input())
 imc = round(float(peso)/float(estatura)**2,2)
 print ("tu imc es" , imc)'''
-
+''''''
 #ejercicio 8
-print("dame un numero entero")
+''''print("dame un numero entero")
 n=int(input())
 print("dame otro bro")
 m=int(input())
@@ -56,11 +56,11 @@ cociente = (n/m)
 print(cociente)
 print ("el residuo es")
 residuo = (n%m)
-print (residuo)
+print (residuo)'''
 
-
+''''''
 #ejercicio 
-print("dime una cantidad a invertir")
+'''print("dime una cantidad a invertir")
 c=float(input())
 print("ahora el interes")
 i=float(input())
@@ -68,10 +68,36 @@ print("a cuantos años quieres")
 a=float(input())
 inversion= c*(i/100+1)**a
 print("el capital obtenido es ")
-print(inversion)
+print(inversion)'''
 
 
-print("cantidad muñecas")
+'''print("cantidad muñecas")
 mñ=int(input())
 print("payaso")
 py=int(input())
+peso_muñecas = str(75 * mñ)
+peso_payasos = str (112*py)
+pt = peso_muñecas + peso_payasos 
+print("el peso total de la caja es" + pt + " kg")'''
+
+'''print ("dame un numero")
+v1= int(input())
+print ("dame otro")
+V2= int(input())
+if v1 < V2:
+ print("la suma es" + str(v1+V2) )
+elif v1> V2:
+  print ("la suma es" + str(v1-V2))
+else:
+  print(str(v1*V2))'''
+
+#ejercicio 1
+print ("dame un entero positivo")
+ent= int(input())
+hola = (ent*(ent+1)//2)
+print ("el resultado es "+str(hola))
+if hola > 20:
+  print("el numero es grande bro")
+else:
+  print("ta chiquito mi pana") 
+
