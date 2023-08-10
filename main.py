@@ -92,12 +92,37 @@ else:
   print(str(v1*V2))'''
 
 #ejercicio 1
-print ("dame un entero positivo")
+'''print ("dame un entero positivo")
 ent= int(input())
 hola = (ent*(ent+1)//2)
 print ("el resultado es "+str(hola))
 if hola > 20:
   print("el numero es grande bro")
 else:
-  print("ta chiquito mi pana") 
+  print("ta chiquito mi pana") '''
+
+#ejercicio 2
+print ("dame un numero entero")
+n= int(input())
+print ("dame otro")
+m= int(input())
+print("el cociente es")
+c = (n//m)
+print(c)
+print ("el residuo es")
+r = (n%m)
+print (r)
+if c<1:
+  print("el divisor es mayor que el dividendo")
+elif c>1:
+  print("el divisor es menor que el dividendo")
+else:
+  print("el divisor y el dividendo son iguales")
+
+
+
+
+
+
+
 
