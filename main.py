@@ -102,7 +102,7 @@ else:
   print("ta chiquito mi pana") '''
 
 #ejercicio 2
-print ("dame un numero entero")
+'''print ("dame un numero entero")
 n= int(input())
 print ("dame otro")
 m= int(input())
@@ -117,7 +117,57 @@ if c<1:
 elif c>1:
   print("el divisor es menor que el dividendo")
 else:
-  print("el divisor y el dividendo son iguales")
+  print("el divisor y el dividendo son iguales")'''
+
+
+
+#ejercicio 3.2
+'''print("dime una cantidad a invertir")
+c=float(input())
+print("ahora el interes")
+i=float(input())
+print("a cuantos años quieres")
+a=float(input())
+inversion= c*(i/100+1)**a
+print("el capital obtenido es ")
+print(inversion)
+if inversion < 100000:
+  print("baja rentabilidad")
+elif inversion >100000 and inversion <1000000: 
+  print("inversion moderada")
+else:
+  print ("es una buena inversion")'''
+
+#ejercicio 4.2
+'''print("cantidad muñecas")
+mñ=int(input())
+print("payaso")
+py=int(input())
+peso_muñecas = int (75 * mñ)
+peso_payasos = int (112*py)
+pt = peso_muñecas + peso_payasos 
+print("el peso total de la caja es" + str(pt) + " kg")
+r1 = "si"
+r2 = "no"
+if pt > 3000:
+  print("quieres enviarlo?")
+  r3= input()
+  if r3 == r1:
+    print ("contenedor enviado")
+  else:
+    print ("no se envia")'''
+
+# ejercicio 555
+
+  
+  
+
+
+
+
+
+
+
 
 
 
