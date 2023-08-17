@@ -158,14 +158,106 @@ if pt > 3000:
     print ("no se envia")'''
 
 # ejercicio 555
+'''n1= int(input())
+n2= int(input())
+def suma(n1, n2):
+  return n1+n2
+print (suma(n1,n2))'''
 
-  
-  
+#ejercicio 556
+'''n1 = int(input())
+n2 = int(input())
+def suma(n1,n2):
+  s = n1 + n2
+  return s
+sum = suma(n1,n2)
+print("la suma es"+ str(sum))'''
+
+#ejercicio sdafgvdgersdfcsrewt
+'''n1 = int(input())
+n2 = int(input())
+def resta(n1,n2):
+  r = n1 - n2
+  return r
+dif = resta(n1,n2)
+print("la resta es"+ str(dif))'''
+#EJERCICIO FGDDREWDFEF
+'''n1 = int(input())
+n2 = int(input())
+def resta(n1,n2):
+  r = n1 - n2
+  return r
+dif = resta(n1,n2)
+print("la resta es"+ str(dif))'''
+
+#DFZGGHTYYHU
+'''n1 = int(input())
+n2 = int(input())
+def multi(n1,n2):
+  p = n1 * n2
+  return p
+PRO = multi(n1,n2)
+print("die produkt ist"+ str(PRO))'''
 
 
+'''n1 = int(input())
+n2 = int(input())
+def divi(n1,n2):
+  d = n1 / n2
+ if n2 == 0: 
+  print ("no se hace mi pana")
+  return d
+def coc(n1,n2):
+  c= n1%n2
+  return c
+div = divi(n1,n2)
+xd = coc(n1,n2)
+print("die ergebnis ist"+ str(div)+ "y el residuo es"+ str(xd))'''
 
-
-
+#calculator
+print ("bienvenido a la calculadora")
+print ("ingrese el valor de A")
+A= int(input())
+print ("ingrese el valor de B")
+B = int(input())
+print ("seleccione la operación a realizar")
+print ("""
+1: suma
+2: resta
+3: multiplicación
+4: división
+""")
+opción = int(input())
+if opción == 1:
+  def suma(A,B):
+    s = A + B
+    return s
+  sum = suma(A,B)
+  print("la suma es"+ str(sum))
+elif opción == 2:
+  def resta(A,B):
+    r = A - B
+    return r
+  dif = resta(A,B)
+  print("la resta es"+ str(dif))
+elif opción == 3:
+  def multi(A,B):
+    p = A * B
+    return p
+  PRO = multi(A,B)
+  print("El prodcucto es"+ str(PRO))
+elif opción == 4: 
+  def divi(A,B):
+    d = A/ B
+    return d
+  def coc(A,B):
+      c= A%B
+      return c
+  div = divi(A,B)
+  xd = coc(A,B)
+  print("EL cociente es"+ str(div)+ "y el residuo es"+ str(xd))
+else:
+  print("incorrecto")
 
 
 
