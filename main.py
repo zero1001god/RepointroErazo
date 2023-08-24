@@ -215,7 +215,7 @@ xd = coc(n1,n2)
 print("die ergebnis ist"+ str(div)+ "y el residuo es"+ str(xd))'''
 
 #calculator
-print ("bienvenido a la calculadora")
+'''print ("bienvenido a la calculadora")
 print ("ingrese el valor de A")
 A= int(input())
 print ("ingrese el valor de B")
@@ -257,7 +257,219 @@ elif opción == 4:
   xd = coc(A,B)
   print("EL cociente es"+ str(div)+ "y el residuo es"+ str(xd))
 else:
-  print("incorrecto")
+  print("incorrecto")'''
+
+
+#ejercicio cta de ahorros
+
+'''print("Bienvenido a tu cuenta de ahorros")
+print("inserte la cantidad depositada")
+cantidad = int(input())
+if cantidad > 0 and cantidad < 1000000:
+  print ("la cantidad de ahorros es")
+  print (cantidad *(1+2/100))
+elif cantidad >= 1000000 and cantidad < 2000000:
+      print ("la cantidad de ahorros es")
+      print (cantidad *(1+5/100))
+elif cantidad > 2000000:
+     print ("la cantidad de ahorros es")
+     print (cantidad *(1+7/100))
+else:
+  print ("error")'''
+
+
+#Cte
+'''def intereses(inv):
+  d = inv
+
+  if (d > 0 and d >1000000):
+    return 2
+  elif (d >= 1000000 and d < 2000000):
+    return 5
+  else: 
+    return 7
+
+def calbalance (int, inv):
+  n= int
+  d= inv 
+
+  return round((d*(1+(n/100))),2)
+
+def ctaAhorros():
+  #inversion, interes, b1, b2, b3 = 0,0 
+  inversion = float(input("ingrese el valor de la inversion:"))
+  interes = intereses(inversion)
+  b1 = calbalance(interes,inversion)
+  b2 = calbalance(interes,b1)
+  b3 = calbalance(interes,b2)
+  print ("balance año 1:" + str(b1) + "balance año 2" + str(b2) + "balance año 3:" + str(b3))
+
+ctaAhorros()'''
+
+'''print ("que figura quieres")
+print ("""
+1: Circulo
+2: Cuadrado
+3: triangulo
+""")
+opción = int(input())
+if opción == 1:
+  print("ingrese el radio")
+  r = float(input())
+  r1= 3.14*(r**2)
+    
+  print("el area del circulo es" + str(r1))
+elif opción == 2:
+  print ("dame la base y la altura")
+  A= float (input())
+  B= float (input())
+  def multi(A,B):
+    P = A * B
+    return P
+  pro = multi(A,B)
+  print("el area del cuadrado es "+ str(pro))
+elif opción == 3:
+   print ("dame la base y la altura")
+   A= float (input())
+   B= float (input())
+   tri = (A * B)/2
+   print("El area del triangulo es "+ str(tri))
+else:
+  print("incorrecto")'''
+
+def areatriangulo(b,a):
+  return (b*a)/2
+def areacuadrado(bc,ad):
+  return (bc*ad)
+def areacirculo(r):
+  return (3.14159*(r**2))
+def arearombo(D,d):
+  return (D*d)/2
+def areapenta(P,A):
+  return (P*A)/2
+def areafig():
+  area=0.0
+  figura= ""
+  figura = input("escriba la figura que desea calcular el area: ")
+
+  if ((figura.lower())=="triangulo"):
+    base=0.0
+    altura = 0.0
+    base= float(input("ingresad la base"))
+    altura = float(input("ingrese la altura"))
+    area= areatriangulo(base,altura)
+    print("la base es:", area)
+  elif ((figura.lower())=="cuadrado"):
+    base=0.0
+    altura = 0.0
+    base= float(input("ingresad la base"))
+    altura = float(input("ingrese la altura"))
+    area= areacuadrado(base,altura)
+    print("la base es:", area)
+  elif ((figura.lower())=="circulo"):
+    radio=0.0
+    radio= float(input("ingresad el radio"))
+    area= areacirculo(radio)
+    print("la base es:", area)
+  elif ((figura.lower())=="rombo"):
+    Diagonal_mayor=0.0
+    Diagonal_menor=0.0
+    Diagonal_mayor= float(input("ingresa la diagonal mayor"))
+    Diagonal_menor= float(input("INGRESE LA DIAGONAL MENOR"))
+    area= arearombo(Diagonal_mayor, Diagonal_menor)
+    print("la base es:", area)
+  elif ((figura.lower())=="pentagono"):
+    Perimetro=0.0
+    Apotema=0.0
+    Perimetro= float(input("ingresa el perimetro"))
+    Apotema= float(input("INGRESE LA apotema"))
+    area= areapenta(Perimetro, Apotema)
+    print("la base es:", area)
+  else: 
+    print("error")
+areafig()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
