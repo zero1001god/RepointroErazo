@@ -337,7 +337,7 @@ elif opción == 3:
 else:
   print("incorrecto")'''
 
-def areatriangulo(b,a):
+'''def areatriangulo(b,a):
   return (b*a)/2
 def areacuadrado(bc,ad):
   return (bc*ad)
@@ -387,30 +387,55 @@ def areafig():
     print("la base es:", area)
   else: 
     print("error")
-areafig()
+areafig()'''
+'''
+def maximo (a,b):
+  if x>y:
+    return a
+  if x<y:
+    return b
+def minimo (a,b):
+  if x>y:
+    return a
+  if x<y:
+    return b
+x=int(input("dame un numero:"))
+y=int(input("dame otro:"))
+print(maximo(x-3, minimo(x+2,y-5)))'''
+
+''''nombre = ("hola")
+print (nombre)'''
 
 
 
+def calcestereo(val,desc):
+  return (val*(1+(desc/100)))
+def valestereo():
+  iva = 20
+  VALORAI= 0.0
+  VALORDI=0.0
+  COSTO=0.0
+  MARCA=""
+  COSTO=float(input("dame el costo del producto"))
+  MARCA= input("dame la marca del estereo: ")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  if COSTO >= 2000000 and MARCA.upper== "NOSY":
+    VALORAI=calcestereo(COSTO,15)
+    VALORDI=calcestereo(VALORAI,iva)
+    print("el valor del estereo es "+ str(VALORDI))
+  elif COSTO >= 2000000 and MARCA.upper != "NOSY":
+    VALORAI=calcestereo(COSTO,10)
+    VALORDI=calcestereo(VALORAI,iva)
+    print("el valor ahora es"+ str(VALORDI))
+  elif COSTO < 2000000 and MARCA.upper == "NOSY":
+    VALORAI=calcestereo(COSTO,5)
+    VALORDI=calcestereo(VALORAI,iva)
+    print("el valor ahora es"+ str(VALORDI))
+  elif COSTO < 2000000 and MARCA.upper != "NOSY":
+    VALORAI=calcestereo(COSTO,0)
+    VALORDI=calcestereo(VALORAI,iva)
+    print("el valor ahora es"+ str(VALORDI))
+valestereo()
 
 
 
