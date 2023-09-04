@@ -407,7 +407,7 @@ print(maximo(x-3, minimo(x+2,y-5)))'''
 print (nombre)'''
 
 
-
+'''
 def calcestereo(val,desc):
   return (val*(1+(desc/100)))
 def valestereo():
@@ -435,21 +435,179 @@ def valestereo():
     VALORAI=calcestereo(COSTO,0)
     VALORDI=calcestereo(VALORAI,iva)
     print("el valor ahora es"+ str(VALORDI))
-valestereo()
+valestereo()'''
 
+#ejercicio año bisiesto:
+'''
+def año():
+  añob =0
+  añob = int(input("inserte el año que vas a digitar: "))
+  if añob % 4 == 0 and añob % 100 != 0  or añob % 400 == 0:
+   print ("año bisiesto")
+  else:
+    print("no es bisiesto")
+año()
+'''
+'''
+#ejercicio perros mestizos
+def perros():
+  peso = 0.0
+  altura = 0.0
+  peso = float(input("dame el peso del perro"))
+  altura = float(input("dame ahora su altura"))
+  if peso >= 5 and peso <15 and altura <30:
+    print ("tu perro es de raza pequeña")
+  elif peso > 15 and peso <25 and altura > 30 and altura < 40:
+    print ("el perro es de raza mediana")
+  elif peso > 25 and peso <45 and altura > 40 and altura < 60:
+    print ("el perro es de raza grande")
+  else:
+    print ("o el perro no existe o lo tienes desnutrido")
+perros()
+'''
+'''
+# ejercicios temperaturas
+def tempCelsiusFahrenheit(C):
+  return  (C * 1.8 )+ 32
+def tempfahrenheitcelsius(F):
+  return (F-32)/1.8
+def tempkelvincelcius(K):
+  return K - 273.15
+def tempcelsiuskelvin(c):
+  return c + 273.15
+def tempfahrenheitkelvin(f):
+  return 5/9 * (f - 32) + 273.15
+def tempkelvinfahrenheit(k):
+  return 1.8*(k - 273.15) + 32
+def convertidor():
+  temp = 0.0
+  ESCALA = ""
+  ESCALACONVERTIR = ""
+  VALORCONV= 0.0
+  temp = float(input("inserte la temperatura"))
+  ESCALA = input("que escala es? ")
+  ESCALACONVERTIR = input("a qué escala quieres convertir?")
+  
+  if ESCALA == "c" and ESCALACONVERTIR == "f":
+    VALORCONV = tempCelsiusFahrenheit(temp)
+    print("la temperatura de grados celsius a grados fahrenheit es: "+ str(VALORCONV))
+  elif ESCALA == "f" and ESCALACONVERTIR == "c":
+    VALORCONV = tempfahrenheitcelsius(temp)
+    print("la temperatura de grados fahrenheit a grados celsius es: "+ str(VALORCONV))
+  elif ESCALA == "k" and ESCALACONVERTIR == "c":
+    VALORCONV = tempkelvincelcius(temp)
+    print("la temperatura de grados kelvin a grados celsius es: "+ str(VALORCONV))
+  elif ESCALA == "c" and ESCALACONVERTIR == "k":
+    VALORCONV = tempcelsiuskelvin(temp)
+    print("la temperatura de grados celsius a grados kelvin es: "+ str(VALORCONV))
+  elif ESCALA == "f" and ESCALACONVERTIR == "k":
+    VALORCONV = tempfahrenheitkelvin(temp)
+    print("la temperatura de grados fahrenheit a grados kelvin es: "+ str(VALORCONV))
+  elif ESCALA == "k" and ESCALACONVERTIR == "f":
+    VALORCONV = tempkelvinfahrenheit(temp)
+    print("la temperatura de grados kelvin a grados fahrenheit es: "+ str(VALORCONV))
+  else:
+    print("error")
+convertidor()'''
 
+'''
+#discoteca
+def disco(val,desc):
+  return (val*(1-(desc/100)))
+def valordisco():
+  edad = 0
+  valordescuento = 0.0
+  V1=25000
+  V2=35000
+  V3=50000
+  edad = int(input("dime la edad que tienes"))
+  if edad >10 and edad <=17:
+    print("felicidades entraste al grupo 1 el precio pagar sin descuento es " + str(V1))
+  elif edad >18 and edad <= 50:
+    print("entraste al grupo 2 precio a pagar sin descuento "+ str(V2))
+  elif edad > 51 and edad < 99:
+    print("entraste al grupo 3 precio a pagar sin descuento "+ str(V3))
+  else:
+    print("o eres muy viejo, o eres muy joven o hubo un error, digita de nuevo")
 
+  if edad >10 and edad <=13:
+    valordescuento=disco(V1,15)
+    print("el valor con desucento es "+str(valordescuento))
+  elif edad > 14 and edad <=17:
+    valordescuento= disco(V1,8)
+    print("el precio con descuento es "+str(valordescuento))
+  elif edad > 18 and edad <=30:
+    valordescuento= disco(V2,11)
+    print("el valor con descuento es "+ str(valordescuento))
+  elif edad > 31 and edad <=50:
+    valordescuento= disco(V2,11)
+    print("el valor con descuento es "+ str(valordescuento))
+  elif edad > 50 and edad <65:
+    valordescuento=disco(V3,11)
+    print("el valor con descuento es"+str(valordescuento))
+  elif edad > 65 and edad <99:
+    valordescuento=disco(V3,40)
+    print("el valor es"+str(valordescuento))
+  else:
+    print("error mi bro")
+                              
+valordisco()
+'''
+'''
+#ejercicio volumenes
+def volumencubo(l):
+  return l**3
+def volumencilindro(r,h):
+  return 3.14*(r**2)*h
+def volumenesfera(R):
+  return 4/3 * 3.14*(R**3)
+def calculorecipientes():
+  volumen=0.0
+  figura=""
+  figura= input("dime la figura la cual es el recipiente: ")
+  if (figura.lower() == "cubo"):
+    lado=0.0
+    lado=float(input("ingrese el lado"))
+    volumen = volumencubo(lado)
+    print("el volumen del recipiente "+str(volumen))
+  elif (figura.lower() == "cilindro"):
+    radio = 0.0
+    altura =0.0
+    radio =float(input("ingrese el radio"))
+    altura =float(input("ingrse la altura"))
+    volumen= volumencilindro(radio, altura)
+    print("el volumen es " + str(volumen))
+  elif (figura.lower() =="esfera"):
+    Radio= 0.0
+    Radio=float(input("ingrese el radio"))
+    volumen = volumenesfera(Radio)
+    print("el volumen es "+str(volumen))
+  else:
+    print("error")
+calculorecipientes()'''
 
-
-
-
-
-
-
-
-
-
-
+#ejercicio seis cubo de rubik
+def cantcubos(cant):
+  return 167*cant
+def cantcajas(canti):
+  return canti//5000
+def cantcajas2(canti):
+  return canti//7000
+def cantcajas3(canti):
+  return canti//1000
+def calculoenvío():
+  cantidad= 0
+  tipo=""
+  tot= 0
+  caja=0
+  cantidad=int(input("cuantos cubos vas a enviar?"))
+  tot=cantcubos(cantidad)
+  print("el peso es de "+str(tot)+" cm3")
+  tipo = input("dame el tamaño de caja")
+  if tot >=167 and tot < 5000 and tipo == "pequeña":
+    caja = cantcajas(tot)
+  print ("Se necesitan" + str(caja) +" cajas pequeñas para el envío.")
+calculoenvío()
 
 
 
